@@ -231,7 +231,7 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"ItemTunaCooked"', '"Fish
 -- Update new half cinderblock wall class
 -- ----------------------------
 
-UPDATE `Traders_DATA` SET `item` = '["cinder_wall_kit",1]' WHERE `item` = '["half_cinder_wall_kit",1]';
+UPDATE `Traders_DATA` SET `item` = '["half_cinder_wall_kit",1]' WHERE `item` = '["cinder_wall_kit",1]';
 UPDATE character_data SET Backpack = REPLACE(Backpack, '"cinder_wall_kit"', '"half_cinder_wall_kit"') WHERE INSTR(Backpack, '"cinder_wall_kit"') > 0;
 UPDATE character_data SET Inventory = REPLACE(Inventory, '"cinder_wall_kit"', '"half_cinder_wall_kit"') WHERE INSTR(Inventory, '"cinder_wall_kit"') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, '"cinder_wall_kit"', '"half_cinder_wall_kit"') WHERE INSTR(Inventory, '"cinder_wall_kit"') > 0;
